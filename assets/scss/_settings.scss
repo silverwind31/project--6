@@ -1,0 +1,21 @@
+ul,ol,p,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: $mainFontColor;
+    background-color: $mainBgColor;
+}
+
+.section_title{
+    display: flex;
+    gap: 22px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000;
+    align-items: center;
+}

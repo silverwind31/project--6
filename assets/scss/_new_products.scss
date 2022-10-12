@@ -1,0 +1,11 @@
+.new_products{
+    .swiper-wrapper{
+        .swiper-slide:nth-child(2){
+            .add_to_cart{
+                a{
+                    display: none;
+                }
+            }
+        }
+    }
+}

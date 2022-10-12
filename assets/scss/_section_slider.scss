@@ -1,0 +1,152 @@
+.slider{
+    position: relative;
+    padding-bottom: 40px;
+    
+    .main-slider{
+        box-shadow: 0px 8px 22px rgba(70, 128, 255, 0.16);
+        border-radius: 10px;
+
+        .slider_item{
+            background: #FFFFFF;
+            padding: 60px;
+    
+            .row{
+                padding-bottom: 20px;
+                .col-md-7{
+
+                    .slider_title{
+                        font-size: 48px;
+                        line-height: 48px;
+                        margin-bottom: 25px;
+                
+                        span{
+                            font-weight: 700;
+        
+                            @media #{$bigTab}{
+                                font-size: 32px;
+                            }
+                        }
+                            @media #{$bigTab}{
+                                font-size: 36px;
+                                line-height: 40px;
+                            }
+                        @media #{$bigTab}{
+                            max-width: 90%;
+                        }
+                    }
+        
+                    .slider_description{
+                        font-size: 16px;
+                        line-height: 28px;
+                        color: $secondFontColor;
+                        margin-bottom: 40px;
+        
+                        @media #{$bigTab}{
+                            margin-bottom: 25px;
+                        }
+                    }
+                
+                    .slider_action{
+                        display: flex;
+                        gap: 40px;
+                        align-items: center;
+        
+        
+                        @media #{$bigTab}{
+                            gap: 30px;
+                        }
+                
+                        .read_more{
+                            text-decoration: none;
+                            color: #fff;
+                            font-weight: 500;
+                            line-height: 20px;
+                            padding: 18px 112px 18px 30px;
+                            background-color: #F55858;
+                            border-radius: 4px;
+                            background-image: url(../images/arrow.svg);
+                            background-repeat: no-repeat;
+                            background-position: calc(100% - 11px) center;
+        
+                        
+                            @media #{$bigTab}{
+                                padding: 18px 90px 18px 30px;
+                            }
+                        }
+                
+                        .old_price{
+                            line-height: 20px;
+                            color: #F55858;
+                            margin-bottom: 5px;
+                            font-weight: 500;
+                        }
+                
+                        .new_price{
+                            font-weight: 500;
+                            font-size: 36px;
+                            line-height: 20px;
+                        }
+                    }
+                    .slide_bg img{
+                        max-width: 100%;
+                        padding-left: 40px;
+        
+                        @media #{$bigTab}{
+                            padding: 0;
+                        }
+                    }  
+                    
+                    @media #{$smallTab}{
+                        margin-top: 15px;
+                    }
+                }
+                    
+            }
+
+            @media #{$bigTab}{
+                padding: 30px;
+            }
+            @media #{$smallTab}{
+                padding: 20px;
+            }
+    
+        }
+        
+        .slide_buttons{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 100;
+    
+            .slide_next, .slide_prev{
+                background: rgba(255, 255, 255, 0.4);
+                backdrop-filter: blur(1.5px);
+                border-radius: 0px 0px 10px 0px;
+                padding: 14px 22px;
+                
+                &:hover{
+                    background-color: rgba(70, 128, 255, 0.8); 
+                }
+                &:hover svg path{
+                    fill: #fff;
+                }
+            @media #{$bigTab}{
+                padding: 10px 22px;
+            }
+            @media #{$smallTab}{
+                padding: 6px 15px;
+               }
+            
+
+            }
+            .slide_prev{
+                border-radius: 10px 0px 0px 0px;
+            }
+            
+        }
+    }
+    
+   @media #{$smallTab}{
+    padding-bottom: 30px;
+   }
+}

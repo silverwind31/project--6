@@ -1,0 +1,58 @@
+.info{
+    padding: 40px 0;
+    background-color: #fff;
+
+    .section_title{
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 25px;
+
+        span{
+            font-size: 14px;
+            line-height: 24px;
+            color: #8D9FBB;
+        }
+    }
+
+    .description{
+        font-size: 16px;
+        line-height: 28px;
+        color: #495668;
+        margin-bottom: 35px;
+    }
+
+    .advantages{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .title{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            color: #495668;
+        }
+        .advantages_row{
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 30px;
+
+            .advantages_item{
+                align-items: flex-start;
+                gap: 20px;
+
+            }
+        }
+    }
+
+    .button{
+        gap: 15px;
+        align-items: center;
+        padding: 13px;
+        background: #EAEDF2;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #495668;
+        max-width: 195px;
+    }
+}
